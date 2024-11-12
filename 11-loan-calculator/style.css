@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loan-calculator-container {
+    background-color: #00796b; /* Azul verdoso */
+    color: #ffffff;            /* Texto en blanco */
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.loan-calculator-container h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.loan-calculator-container label {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.loan-calculator-container input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.loan-calculator-container p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.loan-calculator-container #result-message {
+    font-size: 18px;
+    color: #ffffff;
+}

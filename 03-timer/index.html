@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>03 - Timer</title>
+</head>
+<body>
+
+    <audio id="audioPlayer" src="alarma.mp3" hidden></audio>
+
+    <div class="timer-container">
+        <h1>Timer</h1>
+        <span><span id="minutes">01:</span><span id="seconds">59</span></span>
+        <input hidden id="minutesData" value="1">
+        <input hidden id="secondsData" value="59">
+
+    </div>
+    <div class="buttons-container">
+        <button class="btn-start" onclick="handleStartTime()">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-clock-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 7v5l2 2" />
+            <path d="M17 22l5 -3l-5 -3z" />
+            <path d="M13.017 20.943a9 9 0 1 1 7.831 -7.292" /></svg>
+        </button>
+        <button class="btn-stop" onclick="handleStopTime()">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-clock-pause">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M20.942 13.018a9 9 0 1 0 -7.909 7.922" />
+            <path d="M12 7v5l2 2" />
+            <path d="M17 17v5" />
+            <path d="M21 17v5" /></svg>
+        </button>
+        <button class="btn-reset" onclick="handleRestartTime()">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rotate-clockwise">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4.05 11a8 8 0 1 1 .5 4m-.5 5v-5h5" /></svg>
+        </button>
+    </div>
+
+    <script src="timer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="calculator-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler-calculator">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 3m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+            <path d="M8 7m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z" />
+            <path d="M8 14l0 .01" />
+            <path d="M12 14l0 .01" />
+            <path d="M16 14l0 .01" />
+            <path d="M8 17l0 .01" />
+            <path d="M12 17l0 .01" />
+            <path d="M16 17l0 .01" />
+        </svg>
+        
+        <output id="resultado" class="display"></output>
+
+        <input hidden value="" id="info">
+
+        <button onclick="clearOutput()">C</button>
+        <button id="division" value="|/|" onclick="botones(this.value)">÷</button>
+        <button id="mult" value="|x|" onclick="botones(this.value)">x</button>
+        <button id="resta" value="|-|" onclick="botones(this.value)">-</button>
+
+        <button id="7" value="7" onclick="botones(this.value)">7</button>
+        <button id="8" value="8" onclick="botones(this.value)">8</button>
+        <button id="9" value="9" onclick="botones(this.value)">9</button>
+        <button id="suma" value="|+|" onclick="botones(this.value)">+</button>
+ 
+        <button id="4" value="4" onclick="botones(this.value)">4</button>
+        <button id="5" value="5" onclick="botones(this.value)">5</button>
+        <button id="6" value="6" onclick="botones(this.value)">6</button>
+
+        <button id="1" value="1" onclick="botones(this.value)">1</button>
+        <button id="2" value="2" onclick="botones(this.value)">2</button>
+        <button id="3" value="3" onclick="botones(this.value)">3</button>
+
+        <button id="0" value="0" onclick="botones(this.value)">0</button>
+        <button value="." onclick="botones(this.value)">.</button>
+        <button onclick="calcular()">=</button>
+    </section>
+
+    <script src="calculator.js"></script>
+
+</body>
+</html>

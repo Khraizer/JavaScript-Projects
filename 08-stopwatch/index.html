@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08. Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stopwatch-container">
+        <div class="timer-container">
+            <h1><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></h1>
+            <input hidden value="0" id="hoursData">
+            <input hidden value="0" id="minutesData">
+            <input hidden value="0" id="secondsData">
+        </div>
+        <div class="buttons-container">
+            <button onclick="handleStartTime()">Start</button>
+            <button onclick="handleStopTime()">Stop</button>
+            <button onclick="handleRestartTime()">Reset</button>
+        </div>
+    </div>
+
+    <script src="stopwatch.js"></script>
+
+</body>
+</html>

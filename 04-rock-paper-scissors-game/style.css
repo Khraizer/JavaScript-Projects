@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: .5em;
+    font-size: 30px;
+}
+
+button:hover{
+    opacity: .6;
+    cursor: pointer;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+#message{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#user-score{
+    color: blue;
+}
+
+#computer-score{
+    color: red;
+}

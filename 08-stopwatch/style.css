@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(189, 188, 188);
+}
+
+.stopwatch-container{
+    width: 40%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-container{
+    padding: 20px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+button {
+    background-color: #4c7faf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    opacity: .8;;
+    scale: 1.1;
+}
+
+

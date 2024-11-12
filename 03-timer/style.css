@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-container{
+    width: 20%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+}
+
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+.buttons-container{
+    width: 20%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+}
+
+.btn-start {
+    background-color: #4caf50;
+}
+
+.btn-stop {
+    background-color: #f44336;
+}
+
+.btn-reset {
+    background-color: #2196f3;
+}
+
+button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+button svg {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    transition: stroke 0.3s ease, transform 0.3s ease;
+}
+
+button:hover svg {
+    stroke: #ffeb3b;
+    transform: rotate(20deg);
+}
+
+button:focus {
+    outline: none;
+    border: 2px solid #fff;
+}
