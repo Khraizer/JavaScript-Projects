@@ -1,7 +1,5 @@
 function botones(valor){
 
-    
-
     const resultado = document.getElementById('resultado');
 
     const info = document.getElementById('info');
